@@ -28,7 +28,3 @@ Architecture
  ∙ useFetch custom hook with loading/error states
  ∙ simulateError flag for testing error UI
 
-
-```bash
-git add README.md
-git commit -m "docs: add README with setup and architecture notes"
