@@ -1,16 +1,34 @@
-# React + Vite
+# 🏢 Smart Building Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive admin dashboard for smart building management.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 18 + Vite
+- Recharts (data viz)
+- Leaflet + react-leaflet (map)
+- Lucide React (icons)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Setup
 
-## React Compiler
+```bash
+npm install
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+Open http://localhost:5173
+Features
+ ∙ Widget 1 — Organization Overview (stat cards, skeleton loader)
+ ∙ Widget 2 — Product Updates (timeline feed)
+ ∙ Widget 3 — Asset Health (expandable accordions)
+ ∙ Widget 4 — Interactive Building Map (Leaflet, health markers)
+ ∙ Widget 5 — Device Analytics (Area + Bar charts)
+Architecture
+ ∙ Mock API via /public/data/*.json fetched with native fetch()
+ ∙ Simulated latency (1.2–1.8s) via setTimeout
+ ∙ useFetch custom hook with loading/error states
+ ∙ simulateError flag for testing error UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+```bash
+git add README.md
+git commit -m "docs: add README with setup and architecture notes"
